@@ -1,0 +1,27 @@
+import static org.junit.Assert.assertFalse;
+import org.junit.jupiter.api.Test;
+
+class JUnitLinkedIntList2Test {
+
+	@Test
+	void test() {
+		//fail("Not yet implemented");
+		LinkedIntList2 sort1= new LinkedIntList2();
+		
+		LinkedIntList list1 = new LinkedIntList();
+		list1.add(12);
+		list1.add(6);
+		list1.add(4);
+		list1.add(8);
+		
+		assertSame(false,list1.isSorted());
+				
+	}
+
+	private void assertSame(boolean b, boolean sorted) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
+
