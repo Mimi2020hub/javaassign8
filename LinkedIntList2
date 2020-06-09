@@ -1,0 +1,38 @@
+// This program computes if a an LinkedIntList is sort(nondecreasing)
+// returns true if sorted
+// an empty list is considered to be sorted
+
+public class LinkedIntList2 {
+	
+	private ListNode front; // null for an empty list
+
+	public static void main(String[] args) {
+		LinkedIntList list = new LinkedIntList();
+		list.add(2);
+		list.add(0);
+		list.add(1);
+		list.add(8);
+			
+			
+		System.out.println((list).isSorted());
+			
+		}
+		
+	public boolean isSorted () {
+		if (front == null) {
+			return true;
+		}
+		    
+		ListNode current = front.next;
+		while (current!=null) {
+			if (current.data < front.data)
+		            
+				return false;
+		    front = current;
+		    current = front.next;
+		    }
+		return true;
+		    
+		}
+
+	}
